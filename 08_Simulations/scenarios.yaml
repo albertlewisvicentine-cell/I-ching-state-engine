@@ -1,0 +1,41 @@
+version: 1.0
+
+defaults:
+
+  random_seed: 42
+
+  time_steps: 250
+
+  trials: 500
+
+parameters:
+
+  k: 8.0
+
+  theta: 0.75
+
+  lambda_b: 1.5
+
+scenarios:
+
+  - name: Low Load
+
+    offered_load: 0.30
+
+  - name: Medium Load
+
+    offered_load: 0.70
+
+  - name: High Load
+
+    offered_load: 0.95
+
+topologies:
+
+  - linear
+
+  - grid
+
+  - random
+
+  - shield_knot
